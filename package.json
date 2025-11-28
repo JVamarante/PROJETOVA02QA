@@ -1,0 +1,23 @@
+{
+  "name": "projetova02qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/steps/*.{js,ts}",
+      "cypress/e2e/pages/*.{js,ts}",
+      "cypress/support/step_definitions/*.{js,ts}"
+    ]
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cypress": "^15.7.0",
+    "esbuild": "^0.27.0"
+  }
+}
